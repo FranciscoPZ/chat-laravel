@@ -7,7 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class ModelMessage extends Model
 {
+    
     use HasFactory;
+    protected $table = 'messages';
+    // protected $fillable = ['message'];
 
     public function user_messages(){
         return $this->hasMany(ModelUserMessage::class);

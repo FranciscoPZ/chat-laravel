@@ -29,7 +29,7 @@
 
     <div class="col-md-9">
         <h1>
-            Área da mensagem
+            Área da mensagem <i class="fa fa-user"></i>
         </h1>
         Seleciona usuário na lista para começar uma comversa
     </div>

@@ -9,5 +9,8 @@ class ModelUserMessage extends Model
 {
     use HasFactory;
 
-    
+    // protected $table = 'user_messages';
+    public function message(){
+        return $this->belongsTo(ModelMessage::class);
+    }
 }

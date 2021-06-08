@@ -16,6 +16,8 @@ use App\Http\Controllers\TesteController;
 |
 */
 Route::get('conversation/{userId}', [MessageController::class, 'conversation'])->name('message.conversation');
+Route::post('send-message', [MessageController::class, 'sendMessage'])->name('message.send-message');
+
 Route::get('/', function () {
     return view('welcome');
 });
